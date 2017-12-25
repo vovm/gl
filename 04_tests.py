@@ -7,7 +7,7 @@ ADMIN_PASSWD = "passsecret"
 
 
 def valid_admin_user(username, password):
-  return username.lower().strip() == ADMIN_USER and password.strip() == ADMIN_PASSWD
+    return username.lower().strip() == ADMIN_USER and password.strip() == ADMIN_PASSWD
 
 
 class TestAdminUser(unittest.TestCase):
@@ -48,4 +48,3 @@ class TestAdminUser(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
